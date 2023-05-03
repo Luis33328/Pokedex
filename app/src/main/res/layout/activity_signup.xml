@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:background="@color/light_blue">
+
+
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Cadastrar-se"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSignupUser"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:hint="Username"
+        android:textSize="22dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/input"
+        android:textColorHint="#FFE5F2FE"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignup" />
+
+    <EditText
+        android:id="@+id/etSignupPass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/input"
+        android:hint="Senha"
+        android:paddingLeft="20dp"
+        android:textColorHint="#FFE5F2FE"
+        android:inputType="textPassword"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignupUser" />
+
+    <EditText
+        android:id="@+id/etSignupConfPass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/input"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColorHint="#FFE5F2FE"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignupPass" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="230dp"
+        android:layout_height="61dp"
+
+        android:layout_marginTop="52dp"
+        android:background="@drawable/btn"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignupConfPass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
